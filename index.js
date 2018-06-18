@@ -31,7 +31,7 @@ csv()
                 query: obj.text,
                 host: 'www.google.co.in',
                 lang: 'en',
-                limit: 100
+                limit: 200
             };
             var count = 0
             scraper.search(options, function(err, url) {
@@ -40,7 +40,7 @@ csv()
                 // console.log(url);
                 count++;
                 if (url.indexOf('financebuddha') > -1 && !jsonObj[index].location) {
-                    console.log(count);
+//                    console.log(count);
                     jsonObj[index].location = count.toString();
 		    console.log(obj.text + ',' + count);
                     // console.log(jsonObj);
