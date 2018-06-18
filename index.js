@@ -42,6 +42,7 @@ csv()
                 if (url.indexOf('financebuddha') > -1 && !jsonObj[index].location) {
                     console.log(count);
                     jsonObj[index].location = count.toString();
+		    console.log(obj.text + ',' + count);
                     // console.log(jsonObj);
                     defer.resolve();
                 }
